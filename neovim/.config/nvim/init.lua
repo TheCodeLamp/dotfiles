@@ -21,10 +21,13 @@ vim.cmd [[
 	filetype plugin on
 	set cursorline              " highlight current cursorline
 	set ttyfast                 " Speed up scrolling in Vim
+    set updatetime=1000         " Sets the global update time from 4000 to 100
 ]]
 
 
 require('plugins')
 require('lsp-config')
 
-vim.cmd[[colorscheme dracula]]
+require('nvim-tree').setup()
+
+vim.cmd[[colorscheme dracula]]      -- Enable dracula theme.
