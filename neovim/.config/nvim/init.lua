@@ -22,6 +22,7 @@ vim.cmd [[
 	set cursorline              " highlight current cursorline
 	set ttyfast                 " Speed up scrolling in Vim
     set updatetime=1000         " Sets the global update time from 4000 to 100
+    set scrolloff=10            " Sets padding above and below the cursor
 ]]
 
 
