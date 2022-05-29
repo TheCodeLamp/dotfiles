@@ -95,8 +95,8 @@ FZF_DEFAULT_COMMAND='find .'
 
 if [[ -n $(command -v lsd) ]]
 then
-    alias ls='lsd'
-    alias l='lsd -A'
+    alias ls='lsd -l'
+    alias l='lsd -Al --blocks "permission,user,group,size,date,name"'
     alias tree='lsd --tree'
 fi
 

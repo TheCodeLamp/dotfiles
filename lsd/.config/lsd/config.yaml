@@ -10,9 +10,6 @@ classic: false
 # layout.
 # Possible values: permission, user, group, size, size_value, date, name, inode
 blocks:
-  - permission
-  - user
-  - group
   - size
   - date
   - name
@@ -77,7 +74,7 @@ indicators: false
 # Which layout to use. "oneline" might be a bit confusing here and should be
 # called "one-per-line". It might be changed in the future.
 # Possible values: grid, tree, oneline
-layout: tree
+layout: oneline
 
 # == Recursion ==
 recursion:
@@ -93,11 +90,6 @@ recursion:
 # Possible values: default, short, bytes
 size: default
 
-# == Permission ==
-# Specify the format of the permission column
-# Possible value: rwx, octal
-permission: octal
-
 # == Sorting ==
 sorting:
   # Specify what to sort by.
@@ -109,7 +101,7 @@ sorting:
   # Whether to group directories together and where.
   # When "classic" is set, this is set to "none".
   # Possible values: first, last, none
-  dir-grouping: none
+  dir-grouping: first
 
 # == No Symlink ==
 # Whether to omit showing symlink targets
@@ -121,16 +113,6 @@ no-symlink: false
 # Possible values: false, true
 total-size: false
 
-# == Hyperlink ==
-# Whether to display the total size of directories.
-# Possible values: always, auto, never
-hyperlink: never
-
 # == Symlink arrow ==
 # Specifies how the symlink arrow display, chars in both ascii and utf8
 symlink-arrow: ⇒
-
-# == Header ==
-# Whether to display block headers.
-# Possible values: false, true
-header: false
