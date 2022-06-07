@@ -104,6 +104,7 @@ fi
 alias battery='upower -i $(upower -e | grep BAT) | grep --color=never -E "state|to\ full|to\ empty|percentage"'
 alias c=clear
 
+alias open='xdg-open'
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
