@@ -29,6 +29,7 @@ vim.cmd [[
 require('plugins')
 require('lsp-config')
 
-require('nvim-tree').setup()
+--require('nvim-tree').setup()
+require('nvim-tree-setup')
 
 vim.cmd[[colorscheme dracula]]      -- Enable dracula theme.
