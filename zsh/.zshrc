@@ -76,7 +76,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git extract)
+plugins=(git extract cp)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,6 +105,9 @@ alias battery='upower -i $(upower -e | grep BAT) | grep --color=never -E "state|
 alias c=clear
 
 alias open='xdg-open'
+
+alias cp='cpv -P'
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
