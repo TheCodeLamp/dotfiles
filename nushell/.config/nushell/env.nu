@@ -63,3 +63,7 @@ let-env PATH = ($env.PATH | split row (char esep) | prepend '~/.cargo/bin')
 
 # Set editor to helix.
 let-env EDITOR = "hx"
+
+# Setup starship
+mkdir ~/.cache/starship
+starship init nu | save ~/.cache/starship/init.nu

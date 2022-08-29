@@ -278,3 +278,10 @@ let-env config = {
     }
   ]
 }
+
+
+# Setup starship
+source ~/.cache/starship/init.nu
+
+# Add wolframalpha scripts.
+source ~/.config/nushell/wolframalpha.nu
