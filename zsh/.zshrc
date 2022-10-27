@@ -91,6 +91,8 @@ alias sv='sudoedit'
 # fzf defaults
 FZF_DEFAULT_COMMAND='find .'
 
+
+
 # ls improvements
 
 if [[ -n $(command -v lsd) ]]
@@ -107,6 +109,9 @@ alias c=clear
 alias open='xdg-open'
 
 alias cp='cpv -P'
+
+# Starship init
+eval "$(starship init zsh)"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
